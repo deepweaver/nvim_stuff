@@ -35,6 +35,8 @@ put color/ to ~/.config/nvim/colors
 open nvim then type :PlugInstall
 
 
+### Tmux
+control+b :setw -g mode-keys vi 
 
 
 
