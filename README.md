@@ -38,7 +38,22 @@ open nvim then type :PlugInstall
 ### Tmux
 control+b :setw -g mode-keys vi 
 
+### Install universal-ctags 
+For macos:
+brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
+For linux:
+```
+git clone https://github.com/universal-ctags/ctags.git
+cd ctags
+./autogen.sh
+./configure --prefix=/where/you/want/to/install # install to where you have access
+make -j && make install # may require extra privileges depending on where to install
+
+# suppose that you have install ctags to $HOME/tools/ctags
+echo export PATH=$HOME/tools/ctags/bin:$PATH >> ~/.bash_profile
+source ~/.bash_profile
+```
 
 
 

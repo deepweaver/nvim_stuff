@@ -5,6 +5,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'zchee/deoplete-jedi'
 " Plug 'trevordmiller/nova-vim'
+Plug 'majutsushi/tagbar'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 " Plug 'w0rp/ale'
@@ -116,4 +117,5 @@ Plug 'scrooloose/nerdtree'
 
 nnoremap <silent> <C-k><C-B> :NERDTreeToggle<CR>
 " autocmd VimEnter * NERDTree | wincmd p
-
+nnoremap <silent> <C-a> :TagbarOpenAutoClose<CR>
+nnoremap <silent> <C-t> :TagbarToggle<CR>
