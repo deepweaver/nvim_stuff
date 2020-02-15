@@ -1,6 +1,7 @@
 ### Install neovim
 #### Linux
 `curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage`
+or you can use the nvim.appimage in this folder
 `chmod u+x nvim.appimage`
 `./nvim.appimage`
 ###### for centos
@@ -26,6 +27,9 @@ change let g:python3_host_prog = '/export2/home/anaconda3/bin/python' to your ow
 
 ### Install Jedi
 pip install jedi
+
+### color 
+put color/ to ~/.config/nvim/colors 
 
 ### PlugInstall
 open nvim then type :PlugInstall
